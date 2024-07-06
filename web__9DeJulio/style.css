@@ -1,0 +1,416 @@
+body{
+    background-color: rgb(4, 21, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    margin: 2rem;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: end;
+}
+
+.lista li{
+    list-style: none;
+}
+
+.lista li a img {
+    transition: transform 0.3s ease;
+    
+}
+
+.lista li a img:hover{
+    transform: scale(1.5);
+    
+}
+
+.imgDiapo{
+    max-width: 100%;
+    height: auto;
+    margin: 0.25rem;
+}
+.carruselImg{
+    display: flex;
+    flex-direction: column;
+}
+.cuentos{
+text-decoration: none;
+list-style: none;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: aliceblue;
+padding: 0;
+margin-top: 2rem;
+margin-bottom: 5rem;
+}
+
+.cuentos li a{
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+    color: aliceblue;
+    font-size: medium;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    max-width: max-content;
+}
+.cuentos li a:hover{
+    transform: scale(1.2);
+    color: rgb(13, 103, 155);
+
+}
+
+.cuentos li {
+    margin: 1rem;
+}
+
+
+.btnMenu:active{
+    transform: scale(0.95);
+    
+}
+
+.btnMenuA{
+width: 350px;
+height: auto;
+}
+
+.btnMenuB{
+width: 125px;
+height: auto;
+}
+.actual{
+   
+   border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    
+    
+}
+
+.autores{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+    color: aliceblue;
+    font-size: larger;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-top: 5rem;
+  }
+.autoresDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.autoresDiv ul{
+    padding: 0;
+    text-align: center;
+}
+.autoresDiv ul li{
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: larger;
+    
+  }
+
+  button{
+    color: rgb(33, 94, 147);
+    background-color: rgba(240, 243, 246, 0.959);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 7px rgba(227, 236, 246, 0.421);
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+    font-size: medium;  
+  }
+
+  footer{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: smaller;
+    margin-top: 8rem;
+    text-align: center;
+  }
+
+  .descarga1{
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: larger;
+    margin: 2rem;
+
+  }
+
+  .descarga1 img {
+    max-width: 15vw;
+    height: auto;
+    margin: 0.25rem;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  section .descarga1 {
+    margin: 3rem;
+  } 
+
+    section .mock {
+    width: 10vw;
+    height: auto;
+    padding: 20px 20px 5px 20px;
+  }
+  section .mockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  section .mockContainer.imgMockCont {
+    display: flex;
+    flex-direction: row;
+
+  }
+  section .mockContainer p{
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size:small;
+    padding-left: 20px;
+    margin: 0;
+
+  }
+  section .desc1Container{
+    display: flex;
+    flex-direction:row;
+   
+  }
+  .autoresTrivia {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+    color: aliceblue;
+    font-size:medium;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+
+  }
+
+  
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas con ancho máximo de 768px */
+
+    body{
+        margin: 0.5rem;
+    }
+    .lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .btnMenuA{
+    width:70vw;
+    height: auto;
+    }
+        
+    .btnMenuB{
+    width: 35vw;
+    height: auto;
+    }
+
+    .lista li a img:hover{
+        transform: scale(1.2);
+        
+    }
+    .lista li{
+        margin: 0.5rem;
+    }
+    .btnMenu:active{
+        transform: scale(0.95);
+        
+    }
+
+    body{
+        margin-top: 3rem;
+   
+  }
+  .cuentos{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    padding: 0;
+    }
+.cuentos li {
+    max-width: 80vw;
+}
+  .autores{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+    color: aliceblue;
+    font-size: larger;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .autoresDiv{
+    display: flex;
+    flex-direction: column;
+}
+  .autoresDiv ul li{
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: larger;
+    
+  }
+  footer{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: smaller;
+    margin-top: 4rem;
+    text-align: center;
+  
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  section .descarga1 {
+    margin: 3rem;
+  } 
+
+  .descarga1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .descarga1 img {
+    max-width: 60vw;
+  }
+
+  .descarga1{
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: larger;
+    margin: 2rem;
+
+  }
+
+  .descarga1 img {
+    max-width: 50vw;
+    height: auto;
+    margin: 0.25rem;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  section .descarga1 {
+    margin: 1rem;
+  } 
+
+    section .mock {
+    width: 25vw;
+    height: auto;
+    padding: 20px 20px 5px 20px;
+  }
+  section .mockContainer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  section .desc1Container .mockContainer.imgMockCont {
+    display: flex;
+    flex-direction: row;
+
+  }
+  section .mockContainer p{
+    color: aliceblue;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+   
+    padding-left: 20px;
+    margin: 0;
+
+  }
+  section .desc1Container{
+    display: flex;
+    flex-direction:column;
+   
+  }
+  .autoresTrivia {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+    color: aliceblue;
+    font-size:small;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+
+  }
+
+}
